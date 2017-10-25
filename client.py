@@ -17,5 +17,5 @@ t = threading.Thread(target=client_listening,args=(sock,))
 t.start()
 for i in range(50):
     msg = str(i).encode(encoding="utf-8")
-    sock.sendto(msg, ('localhost', 9876))
+    sock.sendto(msg, ('198.199.119.37', 9876))
 sock.close()
